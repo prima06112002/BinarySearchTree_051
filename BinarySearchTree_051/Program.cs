@@ -29,6 +29,18 @@ namespace BinarySearchTree_051
         {
             ROOT = null; /* Initializing ROOT to null*/
         }
+        public void insert(string element)/* Insert a node in the binary search tree */
+        {
+            Node tmp, parent = null, currentNode = null;
+            Search(element, ref parent, ref currentNode);
+            if (currentNode != null) /*Check if the node to be inserted already inserted or not*/
+            {
+                Console.WriteLine("Duplicate words not allowed");
+                return;
+            }
+            else /* if the spesified node is not present */
+            { }
+        }
 
     }
     internal class Program
